@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+<script>
+
+// ================================================
+// 4.Window Object:
+// ================================================
+// a)
+function openWindow(url, width, height) {
+    const left = (window.screen.width - width) / 2;
+    const top = (window.screen.height - height) / 2;
+    
+    window.open(url, "", `width=${width}, height=${height}, left=${left}, top=${top}`);
+}
+//   b)
+const url = "https://www.example.com";
+const width = 800;
+const height = 600;
+
+openWindow(url, width, height);
+
+    </script>
+</body>
+</html>

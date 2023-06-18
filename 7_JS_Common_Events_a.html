@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>
+            Click anywhere inside the browser window to display the mouse pointer's x- and y-coordinates.
+        </p>
+    </div>
+    <script>
+        document.addEventListener("click", function(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    alert("Coordinates: (" + x + ", " + y + ")");
+  });
+    </script>
+</body>
+</html>

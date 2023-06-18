@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        async function sendPostRequest() {
+            var url = "https://api.example.com/submit";
+            var data = {
+                name: "John Doe",
+                email: "johndoe@example.com"
+            };
+
+            try {
+                const response = await axios.post(url, data);
+                console.log("Request sent successfully");
+            } catch (error) {
+                console.error("Error:", error);
+            }
+        }
+        sendPostRequest();
+    </script>
+</body>
+
+</html>
